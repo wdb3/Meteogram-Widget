@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meteogram – Bolinder Field (KTVT)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: 0;
+      overflow: hidden;
+      display: block;
+    }
+
+    /* Required meteoblue attribution — kept but visually minimal */
+    .mb-credit {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 11px;
+      color: #999;
+      padding: 3px 0;
+      background: #fff;
+      flex-shrink: 0;
+    }
+    .mb-credit a { color: #999; text-decoration: none; }
+    .mb-credit a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <iframe
+    src="https://www.meteoblue.com/en/weather/widget/meteogram/bolinder-field-tooele-valley-airport_united-states_5771741?geoloc=fixed&temperature_units=FAHRENHEIT&windspeed_units=MILE_PER_HOUR&precipitation_units=INCH&forecast_days=3&layout=bright&autowidth=auto&user_key=96c3696b171fb86a&embed_key=28a417faf069b3f6&sig=585ecb0f605c243b2ea97cda54ad7278d4a0d98e019888bf6b6f704778c80d95"
+    frameborder="0"
+    scrolling="NO"
+    allowtransparency="true"
+    sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+  ></iframe>
+
+  <!-- DO NOT REMOVE THIS LINK — required by meteoblue terms -->
+  <div class="mb-credit"><a href="https://www.meteoblue.com/en/weather/week/index" target="_blank" rel="noopener">meteoblue</a></div>
+
+</body>
+</html>
